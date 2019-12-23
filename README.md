@@ -16,6 +16,8 @@ Optionally pass a PROTOCOL environment variable to override the GlobalProtect de
 
 ## Test
 
+Now from the host machine, you can send traffic through the SOCKS proxy which is exposed on localhost:9070.  See how the second request below uses SOCKS5 and gets a different IP:
+
 `curl ifconfig.co` => your local IP
 
 `curl --socks5 localhost:9070 ifconfig.co` => your VPN IP
